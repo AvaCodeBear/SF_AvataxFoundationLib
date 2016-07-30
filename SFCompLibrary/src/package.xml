@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>*</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>AvaAcctBillingValidate</members>
+        <members>AvaAcctBillingValidateVerify</members>
+        <members>AvaAcctShippingValidateHandler</members>
+        <members>AvaAcctShippingValidateVerify</members>
+        <members>AvaCompAddrValidateVerify</members>
+        <members>AvaCompanyValidateHandler</members>
+        <members>AvaMessageBox</members>
+        <members>AvaTestConnectHandler</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
+        <members>AvaCompany__c</members>
+        <members>AvaCredentials__c</members>
+        <members>AvaUserMessage__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>AvaCompany__c</members>
+        <members>AvaCredentials__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>AvalaraProduction</members>
+        <members>AvalaraSandbox</members>
+        <name>RemoteSiteSetting</name>
+    </types>
+    <version>31.0</version>
+</Package>

@@ -1,0 +1,2 @@
+<apex:page standardController="AvaCompany__c" extensions="AvaCompanyValidate" action="{!Validate}" >
+</apex:page>

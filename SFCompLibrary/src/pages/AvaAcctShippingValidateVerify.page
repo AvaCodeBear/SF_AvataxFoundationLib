@@ -1,0 +1,29 @@
+<apex:page controller="AvaAcctShippingValMsg">
+    <apex:pageBlock title="{!m_oUserMessage.MessageBoxTitle__c}">
+        <apex:form >         
+            <table border="0" width="100%" cellpadding="5">
+                <col width="15%"/><col width="35%"/><col width="35%"/><col width="15%"/>
+                <tr>
+                	<td />
+                	<td><h1>Original Address</h1></td>
+                	<td><h1>Validated Address</h1></td>
+                	<td />
+                </tr>
+                <tr>
+                	<td />
+                	<td><apex:outputField value="{!m_oUserMessage.Message_Col1__c}"/></td>
+                    <td><apex:outputField value="{!m_oUserMessage.Message_Col2__c}"/></td>
+                    <td/>
+                </tr>      
+                <tr />
+                <tr />
+                <tr>
+                	<td />
+                	<td><apex:commandButton action="{!DismissPage}" value="Keep Original" /></td>
+                    <td><apex:commandButton action="{!UpdateAddress}" value="Save Validated" /></td>
+                    <td />
+                </tr>
+            </table>
+        </apex:form>
+    </apex:pageBlock>
+</apex:page>
