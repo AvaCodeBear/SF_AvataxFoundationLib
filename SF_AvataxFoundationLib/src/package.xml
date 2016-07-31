@@ -1,35 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>*</members>
-        <name>ApexClass</name>
-    </types>
-    <types>
+        <members>AddressSvc</members>
+        <members>AvaAcctAddrValidate</members>
+        <members>AvaAcctBillingValMsg</members>
         <members>AvaAcctBillingValidate</members>
-        <members>AvaAcctBillingValidateVerify</members>
-        <members>AvaAcctShippingValidateHandler</members>
-        <members>AvaAcctShippingValidateVerify</members>
-        <members>AvaCompAddrValidateVerify</members>
-        <members>AvaCompanyValidateHandler</members>
+        <members>AvaAcctShippingValMsg</members>
+        <members>AvaAcctShippingValidate</members>
+        <members>AvaBaseValidate</members>
+        <members>AvaCompAddrValMsg</members>
+        <members>AvaCompanyValidate</members>
+        <members>AvaContactAddrValidate</members>
         <members>AvaMessageBox</members>
-        <members>AvaTestConnectHandler</members>
-        <name>ApexPage</name>
-    </types>
-    <types>
-        <members>AvaCompany__c</members>
-        <members>AvaCredentials__c</members>
-        <members>AvaUserMessage__c</members>
-        <name>CustomObject</name>
-    </types>
-    <types>
-        <members>AvaCompany__c</members>
-        <members>AvaCredentials__c</members>
-        <name>CustomTab</name>
-    </types>
-    <types>
-        <members>AvalaraProduction</members>
-        <members>AvalaraSandbox</members>
-        <name>RemoteSiteSetting</name>
+        <members>AvaSObjectAddrValidate</members>
+        <members>AvaStaticHelpers</members>
+        <members>AvaTestConnect</members>
+        <members>AvaUnitTests</members>
+        <members>TaxSvc</members>
+        <name>ApexClass</name>
     </types>
     <version>31.0</version>
 </Package>

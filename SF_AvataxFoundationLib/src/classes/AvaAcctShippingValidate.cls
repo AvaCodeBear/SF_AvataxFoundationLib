@@ -12,10 +12,13 @@
 //   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 //   See the License for the specific language governing permissions and
 //   limitations under the License.
+//
+// The latest version of this source file may be obtained from
+// https://github.com/AvaCodeBear/SF_AvataxFoundationLib
 ////////////////////////////////////////////////////////////////////////////////
 
 public with sharing class AvaAcctShippingValidate 
-extends AvaAcctAddrValidate
+extends AvaSObjectAddrValidate
 {
 	public AvaAcctShippingValidate(ApexPages.StandardController controller)
 	{
@@ -23,7 +26,7 @@ extends AvaAcctAddrValidate
 	
 	public AvaAcctShippingValidate(Account acct)
 	{
-		m_AccountRec = acct.ID;
+		m_SObjectRecID = acct.ID;
 	}
 	
     public override AddressSvc.BaseAddress FetchOriginalAddress()
@@ -34,7 +37,7 @@ extends AvaAcctAddrValidate
         if(!Test.isRunningTest())
         {
         	acctAddrList = [select Name, ID, ShippingStreet, ShippingCity, ShippingState, 
-        		ShippingPostalCode, ShippingCountry from Account where ID =: m_AccountRec];
+        		ShippingPostalCode, ShippingCountry from Account where ID =: m_SObjectRecID];
         }
         else
         {

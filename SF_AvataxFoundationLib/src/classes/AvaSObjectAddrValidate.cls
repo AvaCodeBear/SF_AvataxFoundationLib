@@ -12,16 +12,19 @@
 //   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 //   See the License for the specific language governing permissions and
 //   limitations under the License.
+//
+// The latest version of this source file may be obtained from
+// https://github.com/AvaCodeBear/SF_AvataxFoundationLib
 ////////////////////////////////////////////////////////////////////////////////
 
-public with sharing abstract class AvaAcctAddrValidate
+public with sharing abstract class AvaSObjectAddrValidate
 extends AvaBaseValidate
 {
-	protected ID m_AccountRec = null;
-	
-    public AvaAcctAddrValidate()
+    protected ID m_SObjectRecID = null;
+    
+    public AvaSObjectAddrValidate()
     {
-    	 m_AccountRec = m_apCurPage.getParameters().get('id');
+         m_SObjectRecID = m_apCurPage.getParameters().get('id');
     }
    
 }
