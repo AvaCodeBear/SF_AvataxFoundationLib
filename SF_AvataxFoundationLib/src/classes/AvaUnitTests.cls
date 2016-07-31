@@ -37,6 +37,32 @@ private class AvaUnitTests
 		acvm.UpdateAddress(); 
 	}
 	
+	static testmethod void ContactValidate()
+	{
+		Contact contact = new Contact (
+			MailingStreet = '1060 w addison',
+			MailingCity = 'Chicago',
+			MailingState = 'il',
+			MailingPostalCode = '60613',
+			MailingCountry = 'us',
+			OtherStreet = '1060 w addison',
+			OtherCity = 'Chicago',
+			OtherState = 'il',
+			OtherPostalCode = '60613',
+			OtherCountry = 'us'
+		);
+		AvaContactMailingValidate asv = new AvaContactMailingValidate(contact);
+		asv.Validate();
+		asv.Validate(true);
+		AvaContactMailingValMsg asvm = new AvaContactMailingValMsg();
+		asvm.UpdateAddress();
+		AvaContactOtherValidate abv = new AvaContactOtherValidate(contact);
+		abv.Validate();
+		abv.Validate(true);
+		AvaContactOtherValMsg abvm = new AvaContactOtherValMsg();
+		abvm.UpdateAddress();
+	}
+	
 	static testmethod void AccountValidate()
 	{
 		Account acct = new Account (
