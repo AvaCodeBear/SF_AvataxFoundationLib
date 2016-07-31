@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>AddressSvc</members>
-        <members>AvaAcctAddrValidate</members>
-        <members>AvaAcctBillingValMsg</members>
-        <members>AvaAcctBillingValidate</members>
-        <members>AvaAcctShippingValMsg</members>
-        <members>AvaAcctShippingValidate</members>
-        <members>AvaBaseValidate</members>
-        <members>AvaCompAddrValMsg</members>
-        <members>AvaCompanyValidate</members>
-        <members>AvaContactAddrValidate</members>
-        <members>AvaContactMailingValMsg</members>
-        <members>AvaContactMailingValidate</members>
-        <members>AvaContactOtherValMsg</members>
-        <members>AvaContactOtherValidate</members>
-        <members>AvaMessageBox</members>
-        <members>AvaSObjectAddrValidate</members>
-        <members>AvaStaticHelpers</members>
-        <members>AvaTestConnect</members>
-        <members>AvaUnitTests</members>
-        <members>TaxSvc</members>
+        <members>*</members>
         <name>ApexClass</name>
     </types>
     <types>
