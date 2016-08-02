@@ -59,7 +59,7 @@ public with sharing abstract class AvaBaseValidate
 	        aSvc.Security = new AddressSvc.Security();
 	        aSvc.Security.UsernameToken.Username = config.Account_Number__c;
 	        aSvc.Security.UsernameToken.Password = config.License_Key__c;
-	        aSvc.Profile.Client = 'AvaTax4ServiceMax,0.9.0';
+	        aSvc.Profile.Client = 'YourConnector,1.0.0';
 	        aSvc.timeout_x = 30000;   // timeout 30 seconds
 			AddressSvc.ValidateRequest vreq = new AddressSvc.ValidateRequest();
 			vreq.Address = m_Original;
